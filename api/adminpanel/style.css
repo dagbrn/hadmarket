@@ -1,0 +1,84 @@
+body {
+    overflow-x: hidden; /* Menghindari scroll horizontal */
+}
+
+.sidebar{
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 200px;
+    padding-top: 20px;
+    background: hsla(205, 46%, 10%, 1);
+
+    background: linear-gradient(90deg, hsla(205, 46%, 10%, 1) 0%, hsla(191, 28%, 23%, 1) 50%, hsla(207, 41%, 27%, 1) 100%);
+    
+    background: -moz-linear-gradient(90deg, hsla(205, 46%, 10%, 1) 0%, hsla(191, 28%, 23%, 1) 50%, hsla(207, 41%, 27%, 1) 100%);
+    
+    background: -webkit-linear-gradient(90deg, hsla(205, 46%, 10%, 1) 0%, hsla(191, 28%, 23%, 1) 50%, hsla(207, 41%, 27%, 1) 100%);
+    
+    filter: progid: DXImageTransform.Microsoft.gradient( startColorstr="#0E1C26", endColorstr="#2A454B", GradientType=1 );
+    transition: width 0.3s;
+    box-shadow: 4px 0 14px rgba(0, 0, 0, 0.5);
+
+}
+
+.sidebar .nav-link{
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    padding: 10px 20px;
+    color: #fff;
+}
+
+.sidebar .nav-link:hover{
+    background-color: rgba(255,255,255,0.25);
+    color: #fff;
+    border-radius: 10px;
+    transition: all 0.3s ease-in;
+}
+
+.sidebar .nav-link:focus{
+    background-color: rgba(255,255,255,0.25);
+    color: #fff;
+    border-radius: 20px;
+    transition: all 0.3s ease-in;
+    font-weight: 300;
+}
+
+.sidebar .description{
+    font-size: 16px;
+}
+
+.sidebar .icon{
+    width: 15px;
+    font-size: 16px;
+}
+
+.container{
+    margin-left: 200px;
+    height: 100%;
+    padding: 20px;
+}
+.container-fluid{
+    margin-left: 200px;
+    height: 100%;
+    padding: 20px;
+}
+
+@media screen and (max-width: 480px) {
+    .sidebar{
+        width: 60px;
+    }   
+    .sidebar .description{
+        display: none;
+    }
+
+    .sidebar .nav-link{
+        justify-content: center;
+    }
+
+    .main-content{
+        margin-left: 60px;
+    }
+}

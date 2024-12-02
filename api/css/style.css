@@ -1,0 +1,184 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    font-family: sans-serif;
+    box-sizing: border-box;
+
+}
+
+/* Warna Utama */
+.warna1 { background-color: #D6EFD8; }
+.warna2 { background-color: #C2FFC7; }
+.warna3 { background-color: #9EDF9C; }
+.warna4 { background-color: #80AF81; }
+.warna5 { background-color: #62825D; }
+.warna6 { background-color: #526E48; }
+.warna7 { background-color: #508D4E; }
+.warna8 { background-color: #1A5319; }
+
+nav{
+    box-shadow: 0 2px 4px 0 rgba(0,0,0,.2);
+}
+
+footer{
+    box-shadow: 0 10px 8px 0 rgba(0,0,0,.2);
+}
+
+.foot-link{
+    transition: color 0.3s ease;
+}
+
+.foot-link:hover {
+    color: #C2FFC7; 
+}
+
+
+
+
+
+/* Card Kategori */
+.cardkategori-container{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-top: 100px;
+}
+
+.cardkategori{
+    width: 400px;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.2);
+    margin: 20px; 
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    background-size: cover; 
+    background-position: center;
+}
+
+.cardkategori:hover {
+    transform: translateY(-10px);
+    box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.2);
+}
+
+.cardkategori img{
+    width: 100%;
+    height: auto;
+
+}
+
+.cardkategori-content{
+    padding:16px;
+    text-align: center;
+
+}
+
+/* Card Produk */
+.cardproduk {
+    border: none;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    border-radius: 10px;
+    
+}
+.cardproduk:hover {
+    transform: translateY(-10px);
+    box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.2);
+}
+.cardproduk img {
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    margin-top: 50px;
+}
+.cardproduk-title {
+    font-size: 1.2rem;
+    font-weight: bold;
+}
+.text-harga {
+    font-size: 1.1rem;
+    color: #62825D;
+    font-weight: bold;
+}
+
+/* Banner */
+.banner {
+    height: 93vh;
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('../asset/bener.jpg');
+    background-size: cover;
+    background-position: center;
+}
+.banner h1, .banner h3 {
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7);
+}
+
+a{
+    text-decoration: none;
+    color: black;
+}
+
+/* Tombol */
+.btn {
+    transition: all 0.3s;
+}
+.btn:hover {
+    transform: scale(1.05);
+    box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.2);
+    background-color: #62825D;
+}
+
+/* Image Box */
+.image-box {
+    height: 200px;
+    overflow: hidden;
+    border-radius: 10px;
+    justify-content: center;
+    display: flex;
+    align-items: center;
+}
+.image-box img {
+    height: 100%;
+    max-width: 100%;
+    object-fit: cover;
+    object-position: center;
+}
+
+/* Gambar Detail Produk */
+.produk-image {
+    border-radius: 10px;
+    box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+.produk-image:hover {
+    transform: scale(1.05);
+    box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.3);
+}
+ /* Produk Terkait */
+.produk-terkait-image {
+    border-radius: 10px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    object-fit: cover;
+    width: 100%;
+    height: 250px;
+}
+.produk-terkait-image:hover {
+    transform: scale(1.05);
+    box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.2);
+}
+
+/* Card Produk Terkait */
+.card-terkait {
+    border: none;
+    background-color: transparent;
+    text-align: center;
+}
+
+.card-terkait h5 {
+    margin-top: 10px;
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: white; /* Warna teks */
+}
+.jTerkait {
+    margin-top: 5px;
+    font-weight: bold;
+    color: white; /* Warna teks */
+}
+
